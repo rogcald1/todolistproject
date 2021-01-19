@@ -1,0 +1,43 @@
+html {
+    font: Arial;
+}
+
+body {
+    background-color: whitesmoke
+}
+.intro {
+    color: #158eb5;
+    margin-bottom: 3em;
+}
+.intro .name {
+    margin-bottom: 0.5px;
+}
+.tagline {
+    margin: 1px;
+}
+.add {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 12px;
+    border: 2px solid #008CBA;
+    transition-duration: 0.4s;
+}
+.add:hover {
+    background-color: #158eb5;
+    color: white;
+}
+#tasklist {
+    margin-top: 1.5em;
+    padding: 5px;
+}
+label {
+    color: #158eb5;
+    padding-left: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.aTask {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
