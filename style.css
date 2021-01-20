@@ -1,7 +1,11 @@
 html {
     font: Arial;
 }
-
+p{
+    display: inline-block;
+    color: #158eb5;
+    vertical-align: top;
+}
 body {
     background-color: whitesmoke
 }
@@ -28,16 +32,30 @@ body {
     color: white;
 }
 #tasklist {
-    margin-top: 1.5em;
-    padding: 5px;
-}
-label {
-    color: #158eb5;
-    padding-left: 3em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
 }
 .aTask {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-right: 1em;
+}
+input {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+img {
+    height: 16px;
+    width: 16px;
+}
+[name] {
+    text-decoration: line-through;
+}
+img {
+    cursor: pointer;
 }
