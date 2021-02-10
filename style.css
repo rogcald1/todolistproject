@@ -1,17 +1,30 @@
 html {
     font: Arial;
 }
-p{
+p {
     display: inline-block;
     color: #158eb5;
-    vertical-align: top;
+}
+.aCheckbox {
+    transition: opacity 0.3s;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+}
+.aTrashcan {
+    transition: opacity 0.3s;
+}
+.removed {
+    opacity: 0;
 }
 body {
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    margin-left: 1.5em;
 }
 .intro {
     color: #158eb5;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
 }
 .intro .name {
     margin-bottom: 0.5px;
@@ -25,7 +38,6 @@ body {
     color: black;
     padding: 12px;
     border: 2px solid #008CBA;
-    transition-duration: 0.4s;
 }
 .add:hover {
     background-color: #158eb5;
@@ -36,21 +48,12 @@ body {
 }
 .aTask {
     padding-left: 0.5em;
-    margin-top: 16px;
-    margin-bottom: 16px;
     padding-right: 1em;
-}
-input {
-    height: 16px;
-    width: 16px;
-    border: 1px solid #dcdcdc;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    transition: opacity 0.3s;
+    font-size: 16px;
+    padding-top: 3px;
 }
 img {
-    height: 16px;
     width: 16px;
 }
 [name] {
@@ -58,4 +61,29 @@ img {
 }
 img {
     cursor: pointer;
+}
+.inputText {
+    width: 200px;
+    height: 25px;
+    cursor: text;
+    border: 1px solid #158eb5;
+    box-sizing: border-box;
+    outline: none;
+}
+.inputText:focus {
+    border: 2px solid #158eb5;
+}
+.taskDiv {
+    height: 40px;
+    align-items: center;
+    display: flex;
+    transition: opacity 0.3s;
+}
+#labelInput {
+    height: 45px;
+    align-items: center;
+    display: flex;
+}
+.labelForBox {
+    padding-left: 0.3em;
 }

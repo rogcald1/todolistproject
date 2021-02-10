@@ -7,17 +7,27 @@
 </head>
 
 <body>
-    <script src="javascript.js"></script>
     <div class="intro">
         <h2 class="name">Your To-Do List</h2>
         <h3 class="tagline">let's start crossing off some stuff :)</h3>
     </div>
-    <button type="button" class="add" onclick="addTask()">Add Task</button>
-    <div id="tasklist"></div>
-    <p id="frontText">no tasks! :D</p>
+    <div class="addTask">
+        <div id='labelInput'>
+            <input type='text' class='inputText' id='inputText'>
+        </div>
+        <br />
+        <button type="button" class="add" onclick="addTask()">Add Task</button>
+    </div>
+    <div id="tasklist">
+        <p id="frontText">no tasks! :D</p>
+        <div id='ultList'></div>
+    </div>
 
 
 
 </body>
+
+<script src="javascript.js"></script>
+
 
 </html>
