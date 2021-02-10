@@ -44,6 +44,7 @@ function addTask() {
     newLabel.setAttribute("id",`inditem${listNum}`);
     newLabel.setAttribute("class",'aTask');
     newLabel.textContent = `${task1}`;
+    newLabel.setAttribute('contentEditable',true);
     document.querySelector(`#divitem${listNum}`).appendChild(newLabel);
     //trash
     let newTrash = document.createElement('img');
@@ -52,7 +53,15 @@ function addTask() {
     newTrash.setAttribute("class",`aTrashcan`);
     newTrash.setAttribute("onclick",`removeTask("item${listNum}")`);
     document.querySelector(`#divitem${listNum}`).appendChild(newTrash);
-    
+
+    //allows someone to edit existing content
+    document.getElementById(`inditem${listNum}`).addEventListener('keypress', (e) => {
+        if (e.keyCode === 13) {
+            document.getElementById(`inditem${listNum}`).blur();
+            e.preventDefault();
+        }
+    });
+
     taskCount += 1;
     taskCheck();
     } else if ((task1 === '') && (newLabel.textContent === '')) {
